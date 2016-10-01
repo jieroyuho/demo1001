@@ -14,15 +14,22 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit() {
 
- }
-num : number = 10;
- changeTitle($event: MouseEvent|KeyboardEvent){
+  }
+  num: number = 10;
+  changeTitle($event: MouseEvent | KeyboardEvent) {
 
-   this.num++;
-   //($event as MouseEvent).
-   console.log($event);
-   if ($event.shiftKey)
-   this.title = this.title + "!";
- }
+    this.num++;
+    //($event as MouseEvent).
+    console.log($event);
+    if ($event.shiftKey)
+      this.title = this.title + "!";
+  }
+  getClass() {
+
+    return {
+      'red': this.num % 2 == 0,
+      'blue': this.num % 2 == 1
+      };
+}
 
 }
