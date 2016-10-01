@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { HandleDirective } from './handle.directive';
 import { ArticleComponent } from './article/article.component';
+import { ChinesePipe } from './chinese.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     HandleDirective,
-    ArticleComponent
+    ArticleComponent,
+    ChinesePipe
   ],
   imports: [
     BrowserModule,
