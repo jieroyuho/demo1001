@@ -8,4 +8,12 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'app works!';
   keyword:string = 'test';
+
+   changeSearchKey(keywordsearch){
+   this.keyword = keywordsearch.value;
+ }
+  EnterSearchKey($event: KeyboardEvent,searchkey) {
+    if ($event.keyCode == 13)
+      this.keyword = searchkey.value;
+  }
 }
