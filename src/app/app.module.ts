@@ -8,6 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { HandleDirective } from './handle.directive';
 import { ArticleComponent } from './article/article.component';
 import { ChinesePipe } from './chinese.pipe';
+import {DataService} from './data.service';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,7 @@ import { ChinesePipe } from './chinese.pipe';
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
