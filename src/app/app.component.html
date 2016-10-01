@@ -11,9 +11,9 @@
 
             <!-- Article START-->
             <app-article
-              *ngFor="let item of data"
+              *ngFor="let item of datasvc.data"
               [item]="item"
-              (deleteOut)="doDeleteArticle($event)" ></app-article>
+              (deleteOut)="datasvc.doDeleteArticle($event)" ></app-article>
             <!-- Article END-->
 
           </div>

@@ -11,11 +11,6 @@ export class AppComponent {
   keyword: string = 'test';
 
   constructor(private datasvc: DataService) {
-    this.data = datasvc.data;
-  }
-
-  doDeleteArticle(item) {
-    this.datasvc.doDeleteArticle(item);
   }
 
 
@@ -26,6 +21,5 @@ export class AppComponent {
 
     this.keyword = input.value;
   }
-  data = [];
 
 }
