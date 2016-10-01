@@ -16,7 +16,7 @@ export class AppComponent {
 
       this.keyword = input.value;
   }
-  doDelete(item)
+  doDeleteArticle(item)
   {
     let idx = this.data.indexOf(item);
     this.data.splice(idx, 1);
