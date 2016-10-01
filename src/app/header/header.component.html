@@ -30,9 +30,6 @@
       <div class="pull-left">
         <h1><a [href]="titleurl">{{title}}</a></h1>
         <h3 [innerHTML]="subtitle" (click)="changeTitle($event)" [ngStyle]="{'font-size': num+'px'}" [ngClass]="getClass()"> </h3>
-
-        <pre>A: {{a | currency:'USD':false}}</pre>
-        <pre>B: {{b | currency:'USD':true:'4.2-2'}}</pre>
         {{num}}
       </div>
 
