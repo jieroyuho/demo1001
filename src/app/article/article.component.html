@@ -4,7 +4,7 @@
       <a [href]="item.href">{{item.title}}</a>
     </h2>
     <div class="post-info clearfix">
-      <span class="post-date"><i class="glyphicon glyphicon-calendar"></i>{{item.date}}</span>
+      <span class="post-date"><i class="glyphicon glyphicon-calendar"></i>{{item.date | date}}  {{item.date | date:'y-m-d'}}</span>
       <span class="post-author"><i class="glyphicon glyphicon-user"></i><a href="http://blog.miniasp.com/author/will.aspx">Will 保哥</a></span>
       <span class="post-category"><i class="glyphicon glyphicon-folder-close"></i><a href="http://blog.miniasp.com/category/Visual-Studio.aspx">Visual Studio</a></span>
     </div>
@@ -12,4 +12,6 @@
   <section class="post-body text" [innerHTML]="item.summary">
   </section>
   <button (click)="doDelete(item)"> DEL </button>
+  <pre> {{item}</pre>
+  <pre> {{item|json}}</pre>
 </article>
