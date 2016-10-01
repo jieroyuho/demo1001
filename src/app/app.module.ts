@@ -6,12 +6,14 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { HandleDirective } from './handle.directive';
+import { ArticleComponent } from './article/article.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    HandleDirective
+    HandleDirective,
+    ArticleComponent
   ],
   imports: [
     BrowserModule,
