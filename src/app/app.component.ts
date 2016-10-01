@@ -12,9 +12,8 @@ export class AppComponent {
    changeSearchKey(keywordsearch){
    this.keyword = keywordsearch.value;
  }
-  EnterSearchKey($event: KeyboardEvent) {
-    let input = $event.target as HTMLInputElement;
-    if ($event.keyCode == 13)
+  EnterSearchKey(input) {
+
       this.keyword = input.value;
   }
 }
