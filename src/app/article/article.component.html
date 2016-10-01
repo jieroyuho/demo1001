@@ -11,5 +11,5 @@
   </header>
   <section class="post-body text" [innerHTML]="item.summary">
   </section>
-  <button (click)="doDelete(item)"> DEL </button>
+  <button (click)="datasvc.doDeleteArticle(item)"> 刪除 </button>
 </article>

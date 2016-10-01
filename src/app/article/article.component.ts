@@ -15,8 +15,4 @@ export class ArticleComponent implements OnInit {
   ngOnInit() {
   }
 
-
-  doDelete(item) {
-    this.datasvc.doDeleteArticle(item);
-  }
 }
