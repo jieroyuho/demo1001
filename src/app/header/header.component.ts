@@ -15,7 +15,8 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
 
  }
- changeTitle($event: MouseEvent){
+ changeTitle($event: MouseEvent|KeyboardEvent){
+   //($event as MouseEvent).
    console.log($event);
    if ($event.shiftKey)
    this.title = this.title + "!";
